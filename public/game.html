@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stratego Game</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<button id="start-game-btn">Start Game</button>
+<div id="game-container">
+    <div id="game-board">
+        <?php for ($row = 0; $row < 10; $row++): ?>
+            <div class="board-row">
+                <?php for ($col = 0; $col < 10; $col++): ?>
+                    <div class="board-cell" data-row="<?= $row ?>" data-col="<?= $col ?>"></div>
+                <?php endfor; ?>
+            </div>
+        <?php endfor; ?>
+    </div>
+</div>
+<script src="js/game.js"></script>
+</body>
+</html>
