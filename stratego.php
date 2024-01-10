@@ -3,6 +3,7 @@ require_once "lib/dbconnect.php";
 require_once "lib/board.php";
 require_once "lib/game.php";
 require_once "lib/users.php";
+require_once "lib/db_upass.php";
 
 
 $method = $_SERVER['REQUEST_METHOD'];
